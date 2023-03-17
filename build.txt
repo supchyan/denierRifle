@@ -1,0 +1,4 @@
+displayName = Denier - The Divinity Sniper Rifle
+author = supchyan
+version = 0.3
+modReferences = TerrariaOverhaul
