@@ -1,4 +1,4 @@
-displayName = Denier - The Divinity Sniper Rifle
-author = supchyan
-version = 0.3
+displayName = [c/c2c2c2:Denier] [c/6a6a6a:- The Divinity Sniper Rifle]
+author = Divine Blacksmith
+version = 1.01
 modReferences = TerrariaOverhaul

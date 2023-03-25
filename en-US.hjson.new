@@ -1,0 +1,42 @@
+
+Mods: {
+	denier: {
+		Items: {
+			rifle: {
+				DisplayName: Denier T.D.S.R.
+				Tooltip:
+					'''
+					Uses ∞ mana.
+					Uses ∞ life.
+					Reduces enemy's current HP by 38%.
+					Unlike normal guns, this one can shoot only when in [c/c12120:Scoping Mode].
+					[c/c12120:Scoping Mode]: Hold Right Click to charge a weapon. Left Click to take a shot.
+					Owner can't move while in [c/c12120:Scoping Mode].
+					Taking a shot grants a player [c/c12120:Dash Point] (upon to 10). Killing an enemy maxes owner's [c/c12120:Dash Points].
+					[c/c12120:Dash Point]: Left Click when not in [c/c12120:Scoping Mode] to spend a [c/c12120:Dash Point] to make a dash.
+					This weapon was born from the ashes of war. The Fallen Angel had been using this until you found it.
+					Best magic invention of the Divine Blacksmith.
+					[c/c12120:It's going to feel a pain!]
+					'''
+			}
+
+			caseItem.DisplayName: Box Call
+		}
+
+		Projectiles: {
+			rifleBullet.DisplayName: Denier Bullet
+			caseBottom.DisplayName: case Bottom
+			caseTop.DisplayName: case Top
+			mainCircle.DisplayName: Forbitten Magic
+			squares45degCursor.DisplayName: Forbitten Magic
+			squaresCursor.DisplayName: Forbitten Magic
+			squaresOutCursor.DisplayName: Forbitten Magic
+			squares.DisplayName: Forbitten Magic
+			squares45deg.DisplayName: Forbitten Magic
+			squaresOut.DisplayName: Forbitten Magic
+			texts.DisplayName: Forbitten Magic
+		}
+
+		Biomes.rifleBiome.DisplayName: rifle Biome
+	}
+}
