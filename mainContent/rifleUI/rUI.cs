@@ -26,13 +26,25 @@ namespace Denier.mainContent.rifleUI {
 			area.Append(Counter);
 			Append(area);
 		}
+		static float lerpValue = 0f;
+		static float scaleValue = 1.1f;
 		public override void Update(GameTime gameTime) {
 			SetRectangle(Counter, rifleUISystem.playerPos.X - Main.screenWidth/2, rifleUISystem.playerPos.Y - Main.screenHeight/2 - 70, 64, 64);
-			Counter.SetText(rifle.dashCount.ToString());
-			if(rifle.dashCount != 10)
-				Counter.TextColor = Color.White;
-			else
-				Counter.TextColor = Color.Red;
+			if(!Main.LocalPlayer.dead) {
+				lerpValue = 0f;
+				Counter.SetText(rifle.dashCount.ToString(), scaleValue, false);
+				if(rifle.dashCount != 10)
+					Counter.TextColor = Color.White;
+				else
+					Counter.TextColor = Color.Red;
+			}
+			else {
+				if(lerpValue < 1f)
+					lerpValue+=0.005f;
+				Counter.SetText("Dashes can save your life", MathHelper.Lerp(scaleValue, 1.5f, lerpValue), false);
+				Counter.TextColor = Color.Lerp(new Color(255,255,255,255), new Color(0, 0, 0, 0), lerpValue);
+			}
+				
 		}
 
 		private void SetRectangle(UIElement uiElement, float left, float top, float width, float height) {
